@@ -19,3 +19,4 @@ KotlinTest.iml
 .idea/codeStyles/codeStyleConfig.xml
 .idea/codeStyles/Project.xml
 out/production/KotlinTest/TestKt.class
+out/production/KotlinTest/Demand.class
