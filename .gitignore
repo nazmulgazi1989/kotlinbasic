@@ -18,3 +18,4 @@ KotlinTest.iml
 .idea/encodings.xml
 .idea/codeStyles/codeStyleConfig.xml
 .idea/codeStyles/Project.xml
+out/production/KotlinTest/TestKt.class

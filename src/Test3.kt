@@ -58,6 +58,7 @@ class MyClass : A,B {
 }
 
 fun addTwo(x :Int) = x+2
+val arr1 = arrayOfNulls<Int>(20);
 
 fun main(){
 //    println(maxNum(10,30))
