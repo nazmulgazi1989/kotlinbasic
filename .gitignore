@@ -8,7 +8,6 @@ out/production/KotlinTest/B.class
 out/production/KotlinTest/B$DefaultImpls.class
 out/production/KotlinTest/A.class
 out/production/KotlinTest/A$DefaultImpls.class
-KotlinTest.iml
 .idea/workspace.xml
 .idea/vcs.xml
 .idea/modules.xml
@@ -20,3 +19,5 @@ KotlinTest.iml
 .idea/codeStyles/Project.xml
 out/production/KotlinTest/TestKt.class
 out/production/KotlinTest/Demand.class
+out/production/KotlinTest/Derived.class
+out/production/KotlinTest/Base.class

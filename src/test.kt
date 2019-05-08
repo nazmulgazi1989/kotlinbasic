@@ -23,6 +23,24 @@ fun hasPrefix(x:Any) = when(x){
     else -> false
 }
 
+open class Base(val name:String){
+    init {
+        println("Initialize Base")
+    }
+    val test : String = "fsaf"
+    open val size: Int = name.length.also { println("Initialize size in Base: $it") }
+}
+class Derived(name:String,val lastName : String) : Base(name.capitalize().also { println("Argument for base: $it") }){
+    init {
+        println("Initialize Derived")
+    }
+
+    override val size: Int = (super.size + lastName.length).also { println("Initializing size in Derived: $it") }
+
+}
+
+
+
 fun main() {
     println(arrInt.max())
     print(list)
@@ -32,5 +50,8 @@ fun main() {
     println(hasPrefix(1))
     println(hasPrefix(15))
 
-    
+    for(i in 6 until 20 step 2){
+        println(i)
+    }
+    Derived("nazmul","hasan")
 }
