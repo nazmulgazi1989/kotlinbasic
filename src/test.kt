@@ -38,7 +38,24 @@ class Derived(name:String,val lastName : String) : Base(name.capitalize().also {
     override val size: Int = (super.size + lastName.length).also { println("Initializing size in Derived: $it") }
 
 }
-
+open class A1{
+    open fun f(){
+        print("A")
+    }
+    fun a(){print("a")}
+}
+interface B1{
+    fun f(){print("B")}
+    fun b(){
+        print("b")
+    }
+}
+class C: A1(), B1{
+    override fun f() {
+        super<A1>.f()
+        super<B1>.f()
+    }
+}
 
 
 fun main() {
